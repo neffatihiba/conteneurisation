@@ -1,0 +1,1 @@
+Develop a virtualization solution for a machine learning model using Docker, enabling deployment across multiple architectures (AMD64 and ARM64) and execution on edge computing devices like the ESP32, with a FastAPI application for real-time inference.
