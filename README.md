@@ -72,7 +72,10 @@ linux/amd64
 
 linux/arm64
 
-![Published Multi-Arch Image](./Published Multi-Arch Image.png)
+
+
+![Multi-Arch Docker Image](./Published Multi-Arch Image.png)
+
 
 
 
