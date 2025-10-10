@@ -4,8 +4,6 @@
 This repository demonstrates how to build *multi-architecture Docker images* that support both *ARM64* and *AMD64* platforms.  
 Multi-platform images allow you to run the same Docker image on different hardware types without needing emulation.
 
----
-
 ## Features
 
 - Build Docker images for multiple architectures (*AMD64* and *ARM64*)
@@ -13,14 +11,10 @@ Multi-platform images allow you to run the same Docker image on different hardwa
 - Uses *Docker Buildx* for advanced multi-platform support
 - Includes a *FastAPI demo* for testing image processing with *YOLOv5*
 
----
-
 ## Prerequisites
 
 - *Docker* version ≥ 20.10  
 - *Docker Buildx* (included with modern Docker versions)
-
----
 ## Repository Structure
 ```
 ├── appfast.py          # FastAPI app for YOLOv5 image detection
@@ -30,9 +24,6 @@ Multi-platform images allow you to run the same Docker image on different hardwa
 └── Published Multi-Arch Image.png
 
 ```
----
-
-
 ##  1. Create a Custom Builder
 
 Docker Buildx allows creating a custom builder to enable multi-platform builds.
@@ -44,9 +35,6 @@ docker buildx create \
   --driver docker-container \
   --use --bootstrap
 ```
-
----
-
 ##  2. Build Multi-Platform Images
 
  ### Build the Docker image for AMD64 and ARM64 platforms
@@ -54,9 +42,6 @@ docker buildx create \
 docker buildx build --platform linux/amd64,linux/arm64 -t your-image-name .
  ```
 This command builds an image compatible with both x86_64 and ARM64 platforms.
-
-
----
 
   ### Published Image
 
@@ -72,17 +57,9 @@ linux/amd64
 
 linux/arm64
 
-
-
 ![Multi-Arch Docker Image](./Published Multi-Arch Image.png)
 
-
-
-
----
-
 ##  3. Testing with FastAPI
-
 
 This repository includes a FastAPI server to test the Docker image:
 
@@ -90,15 +67,8 @@ This repository includes a FastAPI server to test the Docker image:
  ```bash
 docker run -p 8080:8080 neff917/img_multiarch:updated
 ```
-
-
-
-
 ### Python Dependencies:
 torch, fastapi, uvicorn, numpy, PIL
-
-
----
 
 ### Access the FastAPI Endpoint
 
