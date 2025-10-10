@@ -57,7 +57,7 @@ linux/amd64
 
 linux/arm64
 
-![Multi-Arch Docker Image](./Published Multi-Arch Image.png)
+![Multi-Arch Docker Image](./Published_Multi_Arch_Image.png)
 
 ##  3. Testing with FastAPI
 
