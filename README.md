@@ -65,8 +65,8 @@ You can also pull the prebuilt multi-architecture image from Docker Hub:
 docker pull neff917/img_multiarch:updated
  ```
 
-# Repository: neff917/img_multiarch:updated
-# Supported Architectures:
+Repository: neff917/img_multiarch:updated
+Supported Architectures:
 
 linux/amd64
 
