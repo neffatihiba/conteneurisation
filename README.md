@@ -97,7 +97,7 @@ torch, fastapi, uvicorn, numpy, PIL
 
 ---
 
-### . Access the FastAPI Endpoint
+### Access the FastAPI Endpoint
 
 You can test the API locally using cURL or Postman:
 
